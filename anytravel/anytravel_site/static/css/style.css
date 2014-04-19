@@ -1,0 +1,10 @@
+html {
+    height: 100%;
+}
+
+body {
+    padding-top: 70px;
+    height: 100%;
+    background: url('/anytravel_site/static/img/main_page_bg.jpg');
+    background-size: 100%;
+}
