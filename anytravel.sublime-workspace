@@ -1,0 +1,425 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"form-btn-signin-error"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"to",
+				"toggle"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"pa",
+				"padding-right"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"mag",
+				"margin-left"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"b",
+				"background-color"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"in",
+				"incorrect"
+			],
+			[
+				"my",
+				"myRoute"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"na",
+				"nameRoute"
+			],
+			[
+				"user",
+				"userlogin"
+			],
+			[
+				"use",
+				"userlogin"
+			],
+			[
+				"Htt",
+				"HttpResponse"
+			],
+			[
+				"User",
+				"UserAdmin"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/home/home/sitetraffic/Django fast start.txt",
+			"settings":
+			{
+				"buffer_size": 753,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "tables.sql",
+			"settings":
+			{
+				"buffer_size": 1170,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/home/sitetraffic/traffic/templates/traffic/registration.html",
+		"/home/home/sitetraffic/traffic/static/css/style.css",
+		"/home/home/sitetraffic/traffic/templates/traffic/createroute.html",
+		"/home/home/sitetraffic/traffic/templates/traffic/showroute.html",
+		"/home/home/sitetraffic/traffic/templates/traffic/login.html",
+		"/home/home/sitetraffic/traffic/static/js/core.js",
+		"/home/home/sitetraffic/traffic/static/js/showroute.js",
+		"/home/home/sitetraffic/traffic/templates/traffic/index.html",
+		"/home/home/sitetraffic/traffic/static/js/ya_map_core.js",
+		"/home/home/Desktop/golf-10-master/script/example.pl",
+		"/home/home/Desktop/golf-10-master/script/v1.pl",
+		"/home/home/Desktop/golf-10-master/tt.pl",
+		"/home/home/sitetraffic/traffic/static/js/jquery-2.0.3.js",
+		"/usr/local/lib/python2.7/dist-packages/django/contrib/messages/storage/base.py",
+		"/usr/local/lib/python2.7/dist-packages/django/contrib/messages/api.py",
+		"/usr/local/lib/python2.7/dist-packages/django/contrib/messages/middleware.py",
+		"/usr/local/lib/python2.7/dist-packages/django/contrib/messages/context_processors.py",
+		"/usr/local/lib/python2.7/dist-packages/django/contrib/messages/constants.py",
+		"/usr/local/lib/python2.7/dist-packages/django/contrib/messages/models.py",
+		"/usr/local/lib/python2.7/dist-packages/django/contrib/messages/utils.py",
+		"/usr/local/lib/python2.7/dist-packages/django/contrib/messages/__init__.py",
+		"/usr/local/lib/python2.7/dist-packages/django/contrib/messages/__init__.pyc",
+		"/home/home/sitetraffic/sitetraffic/urls.py",
+		"/home/home/sitetraffic/traffic/urls.py",
+		"/home/home/sitetraffic/traffic/templates/registration.html",
+		"/home/home/sitetraffic/traffic/static/css/bootstrap.css",
+		"/home/home/sitetraffic/traffic/templates/traffic/registration",
+		"/home/home/sitetraffic/traffic/views.py",
+		"/home/home/sitetraffic/traffic/models.py",
+		"/home/home/test.pl",
+		"/home/home/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/home/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/home/sitetraffic/traffic/static/showsomeroute1.html",
+		"/home/home/sitetraffic/sitetraffic/settings.py",
+		"/home/home/sitetraffic/Django auth system.txt",
+		"/home/home/sitetraffic/traffic/static/createroute.html",
+		"/home/home/sitetraffic/traffic/admin.py",
+		"/home/home/sitetraffic/Django views",
+		"/home/home/sitetraffic/traffic/static/index.html",
+		"/home/home/sitetraffic/traffic/templates/traffic/id.html",
+		"/home/home/sitetraffic/traffic/static/test.txt",
+		"/home/home/sitetraffic/Django static files.txt",
+		"/home/home/sitetraffic/traffic/templates/admin/base_site.html",
+		"/home/home/sitetraffic/Django fast start.txt",
+		"/home/home/sitetraffic/Django sql API.txt"
+	],
+	"find":
+	{
+		"height": 42.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Войти",
+			"destroyElement",
+			"checkLoginPass",
+			"checkPass",
+			"form-btn-error-text",
+			"form-btn-text",
+			"form-btn-error-text",
+			"singup",
+			"form-btn-singup",
+			"btn-singup",
+			"#btn-singup",
+			"10",
+			"FF3636",
+			"progress-striped",
+			"\\dd\\d",
+			"css",
+			"singin",
+			"checkLoginPass",
+			"popover",
+			"hei",
+			"width",
+			"forgot",
+			"checkLoginPass",
+			"ul-nav-signin",
+			"btn-submit-form",
+			"active",
+			"btn-si",
+			"btn-signin",
+			"btn-submit-form",
+			"form",
+			"form-up",
+			"form-sin",
+			"sig",
+			"signin",
+			";\n",
+			"main_page_upper_page",
+			"btn-submit-form",
+			"10px",
+			"singin",
+			"form",
+			"49E360",
+			"navbar",
+			"setTimeout",
+			"delete",
+			"\">\n",
+			"selectRouteByUserId",
+			"AuthUserObj",
+			"AuthUserObject",
+			"AuthUserObj",
+			"right",
+			"left",
+			"bottom",
+			"right",
+			"top",
+			"registration",
+			" ($('#",
+			"1",
+			"btn-form-group",
+			"btn-forms-group",
+			"btn-group",
+			"utf",
+			"defa",
+			"http_referer",
+			"min",
+			"center-block",
+			"myRoute",
+			"routeCoordinates",
+			"r ",
+			"'),\n",
+			")\n",
+			"topbar",
+			"top",
+			"topbar",
+			"navbar",
+			"bottom",
+			"userlogin",
+			">>>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/home/home/sitetraffic/Django fast start.txt",
+					"settings":
+					{
+						"buffer_size": 753,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								753,
+								753
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "tables.sql",
+					"settings":
+					{
+						"buffer_size": 1170,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								299,
+								299
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/SQL/SQL.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 34.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 207.0,
+	"status_bar_visible": true
+}
