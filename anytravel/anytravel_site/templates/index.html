@@ -2,24 +2,24 @@
 {% block content %}
 
     <!-- Форма поиска -->
-    <div class="container col-md-8" id="search-content">
+    <div class="container col-md-12" id="search-content">
 
         <form action="/search" mathod="get" >
             <div class="form-group col-md-12">
-                <label for="search-place" class="search-label">Укажите город или отель</label>
+                <label for="search-place" class="site-label">Укажите город или отель</label>
                 <input type="text"   class="form-control" placeholder="Укажите город или отель" name="search-place" id="search-place" />
             </div>
             <div class="container">
                 <div class=" form-group col-md-4" style="padding-left: 0px;">
-                    <label for="search-date-from" class="search-label">Дата отправления</label>
+                    <label for="search-date-from" class="site-label">Дата отправления</label>
                     <input type="text" class="date-input form-control" placeholder="Дата отправления" name="search-date-from" id="search-date-from"/>
                 </div>
                 <div class="col-md-4" style="padding-left: 0px;">
-                    <label for="search-date-to" class="search-label">Дата возврата</label>
+                    <label for="search-date-to" class="site-label">Дата возврата</label>
                     <input type="text" class="date-input form-control" placeholder="Дата возврата"    name="search-date-to" id="search-date-to"  />
                 </div>
                 <div class="col-md-4" style="padding-left: 0px;padding-right: 0px;">
-                    <label for="search-human-count" class="search-label">Взрослых и детей</label>
+                    <label for="search-human-count" class="site-label">Взрослых и детей</label>
                     <select id="search-human-count" class="form-control" name="search-human-count">
                         <option value="1">1</value>
                         <option value="1">2</value>
@@ -43,5 +43,5 @@
         });
     </script>
     <!-- Конец скрипта для отображения дат -->
-    Hello, мир!
+
 {% endblock %}
