@@ -33,3 +33,12 @@ body {
 .link:hover {
     color: #3276b1;
 }
+
+#form-reg {
+    background-color: #3d3d3d;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px auto;
+    max-width: 550px;
+}

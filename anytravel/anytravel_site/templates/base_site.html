@@ -1,0 +1,20 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <link href="{% static 'css/style.css' %}"     type="text/css" rel="stylesheet" />
+        <link href="{% static 'css/bootstrap.css' %}" type="text/css" rel="stylesheet" />
+        <link href="{% static 'css/pickmeup.css'  %}" type="text/css" rel="stylesheet" />
+
+        <script src="{% static 'js/jquery-2.0.3.js'        %}"></script>
+        <script src="{% static 'js/jquery.pickmeup.min.js' %}"></script>
+    </head>
+    <body>
+        <nav class="navbar navbar-fixed-top navbar-inverse" id="site-navbar">
+        </nav>
+
+        {% block context %}{% endblock %}
+
+    </body>
+</html>
