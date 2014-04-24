@@ -15,6 +15,9 @@ DATABASES = {
         'NAME':     '',
         'USER':     '',
         'PASSWORD': '',
+        'OPTIONS':  {
+            'use_unicode': True,
+        },
     }
 }
 

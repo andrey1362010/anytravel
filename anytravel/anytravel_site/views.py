@@ -1,6 +1,7 @@
 # Create your views here.
 from django.http      import HttpResponse
 from django.shortcuts import render, redirect
+from anytravel_site   import models
 
 def index( request ):
     return render( request, 'index.html' )
