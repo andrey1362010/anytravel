@@ -3,32 +3,47 @@
 
         <div class="container">
             <div class="container col-md-8">
-                {% block content %}{% endblock %}
+                {% block index %}{% endblock %}
             </div>
 
             <!-- Боковая панель -->
             <div class="container col-md-4">
                     <!-- SignIn блок -->
                     <div class="container" id="signin-block">
-                        <form action="/signin" method="post">
-                            <div class="form-group">
-                                <div class="h2 site-label">Войдите или <a href="/registration" class="link">зарегистрируйтесь</a></div>
-                            </div>
-                            <div class="form-group">
-                                <label for="form-login" class="site-label">Адрес электронной почты</label>
-                                <input type="text" id="form-login" name="login" class="form-control" placeholder="Адрес электронной почты" />
-                            </div>
-                            <div class="form-group">
-                                <label for="form-passwd" class="site-label">Пароль</label>
-                                <input type="password" id="form-passwd" name="passwd" class="form-control" placeholder="Пароль" />
-                            </div>
+                        {% if user.is_authenticated %}
+                            {% if user.name == '' or user.name == None %}
+                                <p class="site-label">
+                                    Заполните, пожалуйта, ваш профиль<br />
+                                </p>
+                                <a href="#" class="link"><button class="btn btn-primary btn-block">Заполнить</button></a>
+                            {% else %}
+                                <p class="site-label">Здравствуйте, {{ user.name }} {{ user.patronymic }}</p>
+                            {% endif %}
+                                <a href="/signout" class="link"><button class="btn btn-primary btn-block">Выход</button></a>
 
-                            <button type="submit" class="btn btn-primary btn-block">Войти</button>
-                        </form>
+                        {% else %}
+                            <form action="/signin" method="post">
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <div class="h2 site-label">Войдите или <a href="/registration" class="link">зарегистрируйтесь</a></div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-login" class="site-label">Адрес электронной почты</label>
+                                    <input type="text" id="form-login" name="email" class="form-control" placeholder="Адрес электронной почты" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-passwd" class="site-label">Пароль</label>
+                                    <input type="password" id="form-passwd" name="passwd" class="form-control" placeholder="Пароль" />
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-block">Войти</button>
+                            </form>
+                        {% endif %}
                     </div>
                     <!-- Конец SignIn блока -->
             </div>
             <!-- Конец боковой панели -->
+
         </div>
 
     {% endblock %}
