@@ -38,3 +38,7 @@ function sameOrigin(url) {
 //======== конец херни для csrf проверки ==============================================
 
 
+// убираем красный цвет инпута
+function removeError(e) {
+    $(e).parent().removeClass("has-error");
+}

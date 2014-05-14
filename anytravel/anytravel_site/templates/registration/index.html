@@ -2,33 +2,101 @@
 
 {% block context %}
 
-	<div class="container">
-		<div class='panel  panel-default' id="form-reg">
-			<div class="panel-body">
-			<p class='lead site-label'>
-				Введите адрес электронной почты и пароль
-			</p>
+<div class="container">
+    <div class='panel  panel-default' id="form-reg">
+        <div class="panel-body">
+            {% if messages %}
+                {% for message in messages %}
+                    {% if message.message == 'SUCCESS_CREATE_USER' %}
+                        <p class='lead site-label'>
+                            Регистрация прошла успешно! Используйте адрес электронной почты и пароль для входа
+                        </p>
+                        <!-- SignIn блок -->
+                        <div class="container" id="signin-block">
+                            <form action="/signin" method="post">
+                                <div class="form-group">
+                                    <label for="form-login" class="site-label">Адрес электронной почты</label>
+                                    <input type="text" id="form-login" name="login" class="form-control" placeholder="Адрес электронной почты" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-passwd" class="site-label">Пароль</label>
+                                    <input type="password" id="form-passwd" name="passwd" class="form-control" placeholder="Пароль" />
+                                </div>
 
-			<!-- Форма регистрации -->
-			<form action='/registration/' method='post' role='form'>
-				{% csrf_token %}
-				<div class='form-group'>
-					<input type='text' class='form-control' id='email' name='email' placeholder='Адрес электронной почты' />
-				</div>
-				<br />
-				<div class='form-group'>
-					<input type='password' class='form-control' id='passwd' name='passwd' placeholder='Пароль' />
-				</div>
+                                <button type="submit" class="btn btn-primary btn-block">Войти</button>
+                            </form>
+                        </div>
+                        <!-- Конец SignIn блока -->
+                    {% else %}
 
-				<div class='form-group'>
-					<input type='password' class='form-control' id='passwdrpt' name='passwdrpt' placeholder='Повторите пароль' />
-				</div>
+                        {% if message.message == 'EMPTY_EMAIL' %}
+                            <p class='lead site-label'>Введите адрес электронной почты</p>
+                        {% endif %}
 
-				<input type='submit' class='btn btn-primary btn-block' value='Зарегистрироваться' />
-			</form>
-			<!-- Конец формы регистрации -->
-			</div>
-		</div>
-	</div>
+                        {% if message.message == 'EMPTY_PASSWD' %}
+                            <p class='lead site-label'>Введите пароль</p>
+                        {% endif %}
+
+                        {% if message.message == 'EMPTY_PASSWDRPT' %}
+                            <p class='lead site-label'Повторите пароль></p>
+                        {% endif %}
+
+                        {% if message.message == 'PASSWDS_NOT_MATCH' %}
+                            <p class='lead site-label'>Пароли не совпадают</p>
+                        {% endif %}
+
+                        {% if message.message == 'CANT_CREATE_USER' %}
+                            <p class='lead site-label'>Ошибка! Регистрация не удалась, возможно данный адрес электронной почты уже занят.</p>
+                        {% endif %}
+
+                        <!-- Форма регистрации -->
+                        <form action='/registration/' method='post' role='form'>
+                            {% csrf_token %}
+                            <div class='form-group has-error'>
+                                <input type='text' class='form-control' id='email' name='email' placeholder='Адрес электронной почты' onclick='removeError(this)' />
+                            </div>
+                            <br />
+                            <div class='form-group has-error'>
+                                <input type='password' class='form-control' id='passwd' name='passwd' placeholder='Пароль' onclick='removeError(this)' />
+                            </div>
+
+                            <div class='form-group has-error'>
+                                <input type='password' class='form-control' id='passwdrpt' name='passwdrpt' placeholder='Повторите пароль' onclick='removeError(this)' />
+                            </div>
+
+                            <input type='submit' class='btn btn-primary btn-block' value='Зарегистрироваться' />
+                        </form>
+                        <!-- Конец формы регистрации -->
+                    {% endif %}
+
+                {% endfor %}
+            {% else %}
+                <p class='lead site-label'>
+                    Введите адрес электронной почты и пароль
+                </p>
+
+                <!-- Форма регистрации -->
+                <form action='/registration/' method='post' role='form'>
+                    {% csrf_token %}
+                    <div class='form-group'>
+                        <input type='text' class='form-control' id='email' name='email' placeholder='Адрес электронной почты' />
+                    </div>
+                    <br />
+                    <div class='form-group'>
+                        <input type='password' class='form-control' id='passwd' name='passwd' placeholder='Пароль' />
+                    </div>
+
+                    <div class='form-group'>
+                        <input type='password' class='form-control' id='passwdrpt' name='passwdrpt' placeholder='Повторите пароль' />
+                    </div>
+
+                    <input type='submit' class='btn btn-primary btn-block' value='Зарегистрироваться' />
+                </form>
+                <!-- Конец формы регистрации -->
+            {% endif %}
+
+        </div>
+    </div>
+</div>
 
 {% endblock %}
